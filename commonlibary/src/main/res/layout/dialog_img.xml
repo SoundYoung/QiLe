@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:text="照片选取"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center_vertical"
+           android:layout_marginTop="5dp"
+           android:id="@+id/take_photo"
+           android:text="拍照"
+           android:textColor="#6b6767"
+           android:textSize="17sp"
+           android:paddingLeft="20dp"
+           android:paddingRight="10dp"
+           android:background="@drawable/dialog_img_selector"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/from_album"
+            android:text="从相册选择"
+            android:textColor="#6b6767"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/dialog_img_selector"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

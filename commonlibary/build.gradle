@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    greendao {
+        schemaVersion 1//版本信息
+        /**
+         * 输出dao的数据库操作实体类文件夹（相对路径 包名+自定义路径名称，包将创建于包名的直接路径下）
+         */
+        daoPackage 'com.keysoft.greendao.model.greendao'
+        /**
+         * greenDao实体类包文件夹
+         */
+        targetGenDir 'src/main/java'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    //时间选择控件地址https://github.com/codbking/PickTime/blob/master/build.gradle
+    compile 'com.github.codbking:PickTime:v1.0.1'
+    compile 'org.greenrobot:greendao:3.1.0'
+
+}

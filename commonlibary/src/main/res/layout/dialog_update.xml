@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:background="#ffffff"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:text="@string/find_new_version"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#70B2FF"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="#9d9d9d"
+        android:text="@string/find_new_version"
+        />
+
+    <RelativeLayout
+        android:id="@+id/twobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#70B2FF"
+            android:gravity="center"
+            android:background="@drawable/blue_btn"
+            android:text="@string/update"
+            />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#bfc4c6"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:background="@drawable/gray_btn"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/onebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/update_only"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="#70B2FF"
+            android:gravity="center"
+            android:background="@drawable/blue_btn"
+            android:layout_centerHorizontal="true"
+            android:text="@string/update"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
